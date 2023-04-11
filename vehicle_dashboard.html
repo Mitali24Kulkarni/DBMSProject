@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title>Vehicle Dashboard</title>
+    <style>
+    body{
+        background-color:lightcyan;
+    }
+    form{
+        border: 1px solid black;
+        width: 600px;
+        height: 300px;
+        padding: 3em;
+        margin: auto;
+       
+    }
+    label{
+        padding-right: 10px;
+        width: 300px;
+        display: inline-block;
+    }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">VECHICLE DASHBOARD</h1>
+<form name="myForm" action="http://localhost/DBMSProject/vehicle_dashboard.php" onsubmit="return validateForm()" method="post" required>
+    <label>Vehicle name:</label> <input type="text" name="vname">
+    <br><br>
+    <label>Vehicle Type:</label> <input type="text" name="vtype">
+    <br><br>
+    <label>Capacity:</label> <input type="number" min="1" name="capacity" id="capacity">
+    <br> <br>
+    <label>Register Number:</label> <input type="text" name="register_number" id="register_number">
+    <br><br>
+    
+    <input type="submit" value="ADD" name="add">
+    <input type="submit" value="MODIFY" name="modify">
+    <input type="submit" value="DELETE" name="delete">
+    <input type="submit" value="DISPLAY" name="display">
+    <input type="reset" value="CLEAR" name="clear">
+    <button type="submit"><a href="travel_home_page.html">HOME</a></button>
+  </form>
+ 
+</body>  

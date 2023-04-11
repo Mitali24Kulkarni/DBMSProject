@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title> LOGIN </title>
+    <style>
+form{
+	margin:  250px 250px;
+	width:  800px;
+	height: 200px;
+	padding:  1em;
+	border:  1px solid grey;
+	border-radius: 1em;
+	font-size: larger;
+}
+p{
+	text-align: center;
+	color: brown;
+	font-size: larger;
+}
+label{
+	display: inline-block;
+	width: 300px;
+	text-align: right;
+	color: royalblue;
+	font-size: larger;
+}
+button{
+	margin-left: .5em;
+}
+.button{
+	padding-left: 300px;
+}
+    </style>
+</head>
+<body>
+	<form action = "http://localhost/DBMSProject/newuser.php" method = "POST" onsubmit="return validate()">
+		<p> Enter your credentials!</p>
+		<label> User_ID: </label><input type = "text" id = "userid" name = "user_id" required>
+		<br>
+		<label> Password: </label><input type = "password" id = "pwd" name = "user_pwd" required >
+		<br>
+        <label> Re-Enter Password: </label><input type = "password" id = "repwd" name = "repwd" required >
+		<div class = "button">
+			<button type = "submit"> Create Account</button>
+		</div>
+	</form>
+    <script>
+		function validate(){
+			var pwd = document.getElementById('pwd').value;
+			var repwd = document.getElementById('repwd').value;
+			if(pwd != repwd)
+			{
+				alert("Re-entered password doesn't match! Enter again!!");
+				return false;
+			}
+			else
+				return true;
+		}
+    </script>
+</body>
+</html>

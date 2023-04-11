@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <title>Booking Dashboard</title>
+    <style>
+    body{
+        background-color:papayawhip;
+    }
+    form{
+        border: 1px solid black;
+        width: 600px;
+        height: 300px;
+        padding: 3em;
+        margin: auto;
+       
+    }
+    label{
+        padding-right: 10px;
+        width: 300px;
+        display: inline-block;
+    }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">BOOKING DASHBOARD</h1>
+<form name="myForm" action="http://localhost/DBMSProject/booking.php" method="post">
+    <label>Tour ID:</label> <input type="text" name="tid">
+    <br><br>
+    <label>Customer ID:</label> <input type="text" name="cid">
+    <br><br>
+    <label>Source:</label> <input type="text" name="source">
+    <br><br>
+    <label>Destination:</label> <input type="text" name="destination">
+    <br><br>
+    <label>Journey  Date:</label> <input type="date" name="jdate">
+    <br><br>
+    <label>End  Date:</label> <input type="date" name="edate">
+    <br><br>
+    <label>Customer Name:</label><input type="text" name="cname">
+    <br> <br>
+    <label>Address:</label><input type="text" name="address">
+    <br> <br>
+    <label>Phone:</label><input type="text" name="pno">
+    <br> <br>
+    
+    <input type="submit" value="BOOK" name="book">
+    <input type="submit" value="MODIFY" name="modify">
+    <input type="submit" value="DELETE" name="delete">
+    <input type="submit" value="DISPLAY" name="display">
+    <input type="reset" value="CLEAR" name="clear">
+    <button type="submit"><a href="travel_home_page.html">HOME</a></button>
+
+  </form>
+</body>

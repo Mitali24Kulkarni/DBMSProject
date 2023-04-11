@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <title>Booking Dashboard</title>
+    <style>
+    body{
+        background-color:papayawhip;
+    }
+    form{
+        border: 1px solid black;
+        width: 600px;
+        height: 300px;
+        padding: 3em;
+        margin: auto;
+       
+    }
+    label{
+        padding-right: 10px;
+        width: 300px;
+        display: inline-block;
+    }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">PAYMENT CONFIRMATION</h1>
+<form name="myForm" action="http://localhost/DBMSProject/confirm_booking.php" method="post" required>
+    <label>Tour ID:</label> <input type="text" name="tid">
+    <br><br>
+    <label>Customer ID:</label> <input type="text" name="cid">
+    <br><br>
+    <label>Vehicle ID:</label> <input type="text" name="vid">
+    <br> <br>
+    <label>Employee ID:</label> <input type="text" name="eid">
+    <br><br>
+    <label>Date:</label> <input type="date" name="date">
+    <br><br>
+    <label>Distance:</label> <input type="text" name="dist" id="dist">
+    <br><br>
+    <label>Amount:</label><input type="text" name="amt" id="amt">
+    <br> <br>
+    <input type="submit" value="DISPLAY" name="display">
+    <input type="submit" value="CONFIRM BOOKING" name="confirm">
+    <button type="submit"><a href="travel_home_page.html">HOME</a></button>
+    
+
+  </form>
+  <script>
+    function validateForm() {
+        var dist = document.getElementById('dist');
+        var total = dist * 10;
+        document.getElementById("amt").value = total;
+        return amt;
+      }
+    </script>
+</body>    

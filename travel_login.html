@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<title> Login Page </title>
+<style> 
+Body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color:beige;
+}
+button { 
+       background-color:antiquewhite; 
+     
+        color:black; 
+        padding: 15px; 
+        margin: 10px 0px; 
+        margin-left: 200px;
+        border: none; 
+        cursor: pointer; 
+        border: 2px solid black; 
+        
+         } 
+ form { 
+        border: 3px solid #f1f1f1; 
+    } 
+ input[type=text], input[type=password] { 
+        width: 600px; 
+        margin: 8px 0;
+        padding: 12px 20px; 
+        display: inline-block; 
+        border: 2px solid black; 
+        box-sizing:border-box; 
+    }
+ 
+  .button { 
+        width: fit-content;
+        margin-top: 50px;
+        margin-left: 150px;
+    } 
+      
+   
+ .container { 
+        padding: 30px; 
+        background-color:lavender;
+        width: fit-content;
+        margin: auto;
+    } 
+</style> 
+</head>  
+<body>  
+    <center> <h1>Login Form </h1> </center> 
+    <form action="http://localhost/DBMSProject/login.php" method="POST" onsubmit="return validate()">
+        <div class="container"> 
+            <label>Username : </label> 
+            <input type="text" placeholder="Enter Username" name="username">
+            <br>
+            <label>Password : </label> 
+            <input type="password" placeholder="Enter Password" name="password">
+        </div>
+        <div class="button">
+            <button type="submit" name="new">New User</button>
+            <button type="submit">Login</button> 
+            <button type="reset" > Clear</button> 
+         </div> 
+    </form> 
+    <script>
+        function validate(){
+
+        }
+    </script>  
+</body>   
+</html>
